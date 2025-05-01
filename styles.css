@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e6b6b6;
+    color: #430101;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .gallery img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+  }
+  
+  .tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .success {
+    color: green;
+  }
+  

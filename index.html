@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Event Handling -->
+  <h2>Event Handling</h2>
+  <button id="clickBtn" class="button">Click Me</button>
+  <p id="clickMessage"></p>
+
+  <input id="keypressInput" type="text" placeholder="Type something...">
+  <p id="keypressMessage"></p>
+
+  <!-- Interactive Elements -->
+  <h2>Interactive Elements</h2>
+  <button id="colorBtn" class="button">Change Color</button>
+
+  <div class="gallery">
+    <img src="image1.png"alt= "image 1">
+    <img src="image2.jpeg" alt="Image 2">
+    <img src="image3.webp" alt="Image 3">
+  </div>
+
+  <div class="tabs">
+    <div class="tab-button" data-tab="1">Tab 1</div>
+    <div class="tab-button" data-tab="2">Tab 2</div>
+    <div class="tab-button" data-tab="3">Tab 3</div>
+  </div>
+  <div id="tab-1" class="tab-content active">Content for Tab 1</div>
+  <div id="tab-2" class="tab-content">Content for Tab 2</div>
+  <div id="tab-3" class="tab-content">Content for Tab 3</div>
+
+  <!-- Form Validation -->
+  <h2>Form Validation</h2>
+  <form id="form">
+    <label>Email: <input type="email" id="email" required></label>
+    <span id="emailError" class="error"></span><br><br>
+
+    <label>Password: <input type="password" id="password" required minlength="8"></label>
+    <span id="passwordError" class="error"></span><br><br>
+
+    <button type="submit" class="button">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
